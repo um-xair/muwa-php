@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<main class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
+    <main class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
         <div class="text-center space-y-6">
             <p class="text-sm uppercase tracking-wide">Welcome to Muwababy</p>
             <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Return and Refund Policy</h1>

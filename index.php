@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 
-<main class="px-10 md:px-[6%] mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[70vh]">
+    <main class="px-10 md:px-[6%] mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:min-h-[70vh]">
         <div class="flex flex-col justify-center space-y-4 md:space-y-6">
             <h2 class="text-4xl lg:text-8xl md:text-6xl font-bold">Modern Stylish For Modern Parenting</h2>
             <p class="text-black w-full lg:w-3/4 text-sm text-justify">Upgrade your baby gear with our modern stylish strollers with Muwababy. 

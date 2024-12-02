@@ -7,12 +7,12 @@
         </div>
 
         <div class="flex flex-col sm:flex-row sm:space-x-6 justify-center items-center">
-            <a href="index.html" class="text-black">Home</a>
-            <a href="about.html" class="text-black">About</a>
-            <a href="category.html" class="text-black">Stroller</a>
-            <a href="accessories.html" class="text-black">Accessories</a>
-            <a href="privacy-policy.html" class="text-black">Support</a>
-            <a href="contact-us.html" class="text-black">Contact</a>
+            <a href="index.php" class="text-black">Home</a>
+            <a href="about.php" class="text-black">About</a>
+            <a href="category.php" class="text-black">Stroller</a>
+            <a href="accessories.php" class="text-black">Accessories</a>
+            <a href="privacy-policy.php" class="text-black">Support</a>
+            <a href="contact-us.php" class="text-black">Contact</a>
         </div>
 
         <div class="flex space-x-6 justify-center items-center">

@@ -21,14 +21,14 @@
 <body class="bg-white mx-auto">
     <header class="px-10 md:px-[6%] bg-white mt-4 flex justify-between items-center p-4 text-black">
         <div>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="assets/muwa.png" alt="" class="h-8">
             </a>            
         </div>
         <div class="hidden md:flex flex-1 justify-center">
             <nav class="space-x-6 lg:space-x-10 text-base lg:text-lg flex items-center">
-                <a href="index.html" class="">Home</a>
-                <a href="about.html" class="">About Us</a>
+                <a href="index.php" class="">Home</a>
+                <a href="about.php" class="">About Us</a>
                 <a href="#" id="stroller-menu" class="flex items-center space-x-2 cursor-pointer">
                     <span>Stroller</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -50,7 +50,7 @@
             </nav>
         </div>
         <div class="flex flex-col p-4 space-y-2 hidden md:flex">
-            <a href="find-us.html" class="bg-[#844D3E] text-white px-6 py-3 rounded-[20px] text-center">
+            <a href="find-us.php" class="bg-[#844D3E] text-white px-6 py-3 rounded-[20px] text-center">
                 Find Us
             </a>
         </div>        
@@ -65,8 +65,8 @@
 
     <div id="mobile-menu" class="hidden md:hidden bg-[#F6EDE4] border-t border-gray-200 mt-2">
         <nav class="flex flex-col px-4 py-2 space-y-2">
-            <a href="index.html" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">Home</a>
-            <a href="about.html" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">About Us</a>
+            <a href="index.php" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">Home</a>
+            <a href="about.php" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">About Us</a>
             <a href="#" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">Stroller</a>
 
             <div id="stroller-submenu" class="bg-white px-4 py-2 rounded-[10px]">
@@ -75,19 +75,19 @@
                         <div class="w-10 h-10">
                             <img src="assets/muwa-black-sq.png" alt="Stroller Accessories" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.html" class="text-[#844D3E]">Muwa Horsi Stroller</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller Black</a>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-10 h-10">
                             <img src="assets/muwa-brown-sq.png" alt="Stroller Parts" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.html" class="text-[#844D3E]">Muwa Horsi Stroller</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller Brown</a>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-10 h-10">
                             <img src="assets/muwa-white-sq.png" alt="Stroller Guide" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.html" class="text-[#844D3E]">Muwa Horsi Stroller</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller White</a>
                     </div>
                 </div>
             </div>
@@ -265,7 +265,7 @@
                     <img src="assets/muwa-black-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi Black</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>
@@ -274,7 +274,7 @@
                     <img src="assets/muwa-brown-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi Brown</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>
@@ -283,7 +283,7 @@
                     <img src="assets/muwa-white-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi White</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>
@@ -419,7 +419,6 @@
         </svg>
     </button>
 
-
     <script>
         const scrollToTopBtn = document.getElementById("scroll-to-top");
         
@@ -437,5 +436,6 @@
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
+    
 </body>
 </html>
