@@ -4,7 +4,7 @@ include 'header.php';
 
 <main class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
         <div class="text-center space-y-6">
-            <p class="text-sm uppercase tracking-wide">Welcome to MUWABABY</p>
+            <p class="text-sm uppercase tracking-wide">Welcome to Muwababy</p>
             <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Privacy Policy</h1>
             <p class="w-full mx-auto text-sm text-justify">
                 We value your privacy and are committed to protecting your personal data. Your trust is important to us, and we are dedicated to safeguarding your information.
@@ -25,7 +25,7 @@ include 'header.php';
     <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20 h-60 md:h-80">
         <div class="text-center lg:w-3/4">
             <p class="w-full mx-auto text-sm md:text-base text-justify">
-                MUWABABY respects your privacy and is committed to protecting your personal data in accordance with the Personal Data Protection Act 2010 (“PDPA”) of Malaysia. This Privacy Policy outlines how we collect, use, disclose, and store your personal data when you use our website, products, or services. By accessing or using our website, you agree to the terms outlined in this policy.
+                Muwababy respects your privacy and is committed to protecting your personal data in accordance with the Personal Data Protection Act 2010 (“PDPA”) of Malaysia. This Privacy Policy outlines how we collect, use, disclose, and store your personal data when you use our website, products, or services. By accessing or using our website, you agree to the terms outlined in this policy.
             </p>
         </div>
     </section>
@@ -100,7 +100,7 @@ include 'header.php';
         </div>
         <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
             <p>
-                MUWABABY implements strict measures to safeguard your data, including administrative, physical, and technical security protocols. While we strive to protect your data, please note that no system is entirely immune to risks.
+                Muwababy implements strict measures to safeguard your data, including administrative, physical, and technical security protocols. While we strive to protect your data, please note that no system is entirely immune to risks.
             </p>
         </div>
     </section>
@@ -109,7 +109,7 @@ include 'header.php';
         <div class="bg-[#EEE9E2] text-black p-6 rounded-[50px] flex flex-col justify-center items-center h-[350px] md:h-[400px] text-center">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold w-3/4">Use of Cookies</h2>
             <p class="text-sm tracking-wide text-gray-700 mb-2 w-full md:w-3/4 mt-4">
-                Cookies are small data files stored on your device to enhance your browsing experience. MUWABABY uses cookies for:
+                Cookies are small data files stored on your device to enhance your browsing experience. Muwababy uses cookies for:
             </p>
         </div>
         <div class="text-black text-justify text-sm md:text-base leading-relaxed">
@@ -126,7 +126,7 @@ include 'header.php';
         </div>
         <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
             <p>
-                Our website may contain links to external websites. MUWABABY is not responsible for the privacy practices of such websites. Please review the privacy policies of those third-party websites before sharing your data.
+                Our website may contain links to external websites. Muwababy is not responsible for the privacy practices of such websites. Please review the privacy policies of those third-party websites before sharing your data.
             </p>
         </div>
     </section>
@@ -147,8 +147,7 @@ include 'header.php';
             <p class="mt-6 text-sm md:text-base">To exercise these rights or inquire about your personal data, please contact us at:</p>
             <ul class="list-disc pl-6 mt-4 space-y-2">
                 <li>Email: <a href="mailto:support@muwababy.com" class="text-[#844D3E]">support@muwababy.com</a></li>
-                <li>Phone: [Insert contact number]</li>
-                <li>Address: [Insert business address]</li>
+                <li>Phone: 016 722 7964</li>
             </ul>
         </div>
     </section>
@@ -159,7 +158,7 @@ include 'header.php';
         </div>
         <div class="text-black text-justify text-sm md:text-base leading-relaxed w-full">
             <p>
-                MUWABABY may update this Privacy Policy from time to time to comply with legal or business changes. Any material updates will be communicated via our website. This Privacy Policy was last updated on 26 November 2024.
+                Muwababy may update this Privacy Policy from time to time to comply with legal or business changes. Any material updates will be communicated via our website. This Privacy Policy was last updated on 26 November 2024.
             </p>
         </div>
     </section>
