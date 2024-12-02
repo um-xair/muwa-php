@@ -205,12 +205,8 @@ include 'header.php';
                 </div>
             </div>
         </div>
-        
-        
     </section>
 
-
-    <?php
-// Include the footer
+<?php
 include 'footer.php';
 ?>

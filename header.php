@@ -137,7 +137,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#844D3E">
                             <path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"/>
                         </svg>
-                        <a href="privacy-policy.html" class="text-[#844D3E]">Privacy Policy</a>
+                        <a href="privacy-policy.php" class="text-[#844D3E]">Privacy Policy</a>
                     </div>
                 
                     <div class="flex items-center space-x-4">
@@ -187,9 +187,9 @@
     </div>
     
 
-    <div id="submenu-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 hidden z-50 mt-2">
+    <div id="submenu-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 hidden z-50 mt-8">
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
-            <a href="privacy-policy.html" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
+            <a href="privacy-policy.php" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="bg-[#EEE9E2] p-4 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#844D3E">
                         <path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"/>
@@ -258,7 +258,7 @@
         </div>
     </div>
 
-    <div id="stroller-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 z-50 mt-2 hidden">
+    <div id="stroller-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 z-50 mt-8 hidden">
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
             <a href="product.html" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
@@ -290,7 +290,7 @@
         </div>
     </div>
 
-    <div id="accessories-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 z-50 mt-2 hidden">
+    <div id="accessories-box" class="w-full bg-[#EEE9E2] py-8 absolute top-20 left-0 z-50 mt-8 hidden">
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
             <a href="#" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
