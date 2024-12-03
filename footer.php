@@ -10,7 +10,7 @@
             <a href="index.php" class="text-black">Home</a>
             <a href="about.php" class="text-black">About</a>
             <a href="category.php" class="text-black">Stroller</a>
-            <a href="accessories.php" class="text-black">Accessories</a>
+            <a href="accessories.php" class="text-black hidden">Accessories</a>
             <a href="privacy-policy.php" class="text-black">Support</a>
             <a href="contact-us.php" class="text-black">Contact</a>
         </div>

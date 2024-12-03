@@ -35,7 +35,7 @@
                         <path id="arrowIcon" d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
                     </svg>
                 </a>
-                <a href="#" id="accessories-menu" class="flex items-center space-x-2 cursor-pointer">
+                <a href="#" id="accessories-menu" class="hidden flex items-center space-x-2 cursor-pointer">
                     <span>Accessories</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
                         <path id="accessories-arrow" d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
@@ -75,26 +75,26 @@
                         <div class="w-10 h-10">
                             <img src="assets/muwa-black-sq.png" alt="Stroller Accessories" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller Black</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
-                    <div class="flex items-center space-x-4">
+                    <div class="hidden flex items-center space-x-4">
                         <div class="w-10 h-10">
                             <img src="assets/muwa-brown-sq.png" alt="Stroller Parts" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller Brown</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
-                    <div class="flex items-center space-x-4">
+                    <div class="hidden flex items-center space-x-4">
                         <div class="w-10 h-10">
                             <img src="assets/muwa-white-sq.png" alt="Stroller Guide" class="w-full h-full object-cover">
                         </div>
-                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller White</a>
+                        <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
                 </div>
             </div>
             
-            <a href="#" class="bg-[#D0A8A1] px-4 py-2 rounded-[10px]">Accessories</a>
+            <a href="#" class="hidden bg-[#D0A8A1] px-4 py-2 rounded-[10px]">Accessories</a>
 
-            <div id="stroller-submenu" class="bg-white px-4 py-2 rounded-[10px]">
+            <div id="stroller-submenu" class="hidden bg-white px-4 py-2 rounded-[10px]">
                 <div class="flex flex-col space-y-2">
                     <div class="flex items-center space-x-4">
                         <div class="w-10 h-10">
@@ -265,25 +265,25 @@
                     <img src="assets/muwa-black-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi Black</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>
-            <a href="product.php" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
+            <a href="product.php" class="hidden bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
                     <img src="assets/muwa-brown-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi Brown</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>
-            <a href="product.php" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
+            <a href="product.php" class="hidden bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
                     <img src="assets/muwa-white-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h4 class="font-medium text-lg">Muwa Horsi White</h4>
+                    <h4 class="font-medium text-lg">Muwa Horsi</h4>
                     <p class="text-sm text-gray-500">Modern Stroller</p>
                 </div>
             </a>

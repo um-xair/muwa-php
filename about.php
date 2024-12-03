@@ -3,11 +3,6 @@ include 'header.php';
 ?>
 
     <main class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
-        <div class="w-full text-center mb-10">
-            <h1 class="text-4xl lg:text-6xl font-bold">
-                Muwababy Horsi Stroller
-            </h1>
-        </div>
         <div class="w-full h-[80vh] bg-gray-200 rounded-[50px] overflow-hidden relative">
             <img 
                 src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/97176-02913_header_web__(5).png" 
@@ -16,83 +11,22 @@ include 'header.php';
             />
         </div>
     </main>
-    
-    <section class="px-10 md:px-[6%] py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div class="w-full flex flex-col items-center">
-                <div class="w-full flex justify-center mb-6">
-                    <img id="product-image" src="assets/sq.JPG" class="w-[100%] sm:w-[500px]" alt="Product Image">
-                </div>
-                <div class="flex space-x-2 w-[100%] sm:w-[500px] h-[150px] justify-between">
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#CFCED4] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66272-49667_Inlfuencer-sand-family-670x350px.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66272-49667_Inlfuencer-sand-family-670x350px.jpg" class="w-full h-full object-cover" alt="White">
-                    </div>
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#5A5862] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66311-87814_gezin-bij-zee-450x300.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66311-87814_gezin-bij-zee-450x300.jpg" class="w-full h-full object-cover" alt="Black">
-                    </div>
-                    <div class="w-[45%] sm:w-[150px] h-full bg-[#967970] cursor-pointer" onclick="changeImage('https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66207-11634_inluencer-met-accessoires-450x300.jpg')">
-                        <img src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/66207-11634_inluencer-met-accessoires-450x300.jpg" class="w-full h-full object-cover" alt="Brown">
-                    </div>
-                </div>
-            </div>
-            <div class="w-full">
-                <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">Muwababy Horsi Stroller</h2>
-                <div class="flex items-center mb-6">
-                    <span class="text-lg sm:text-xl line-through text-gray-500 mr-4">RM1399</span>
-                    <span class="text-3xl sm:text-4xl font-bold">RM799</span>
-                </div>
-                <div class="flex space-x-4 sm:space-x-6 mb-6">
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#CFCED4] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-white-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#5A5862] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-black-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#967970] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-brown-sq.png')"></div>
-                </div>
-                <div class="flex items-center space-x-4 mt-6 sm:mt-10">
-                    <div class="flex items-center border-2 rounded-[20px] border-[#844D3E]">
-                        <button id="decrease" class="px-4 py-2 text-xl">-</button>
-                        <input id="quantity" type="number" value="1" class="w-10 text-center py-2 md:py-5 border-none" readonly />
-                        <button id="increase" class="px-4 py-2 text-xl">+</button>
-                    </div>
-                    <a href="cart.php">
-                        <button class="bg-[#844D3E] text-white px-6 py-3 md:py-5 w-full sm:w-60 md:w-72 rounded-[20px] text-lg font-semibold">Add to Cart</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <script>
-            function changeImage(imageSrc) {
-                const productImage = document.getElementById('product-image');
-                productImage.src = imageSrc;
-            }
-        </script>
-    </section>
-    
-    <script>
-        function changeImage(imageSrc) {
-            const productImage = document.querySelector('#product-image');
-            productImage.classList.add("opacity-0");
-            setTimeout(() => {
-                productImage.src = imageSrc;
-                productImage.classList.remove("opacity-0");
-            }, 300);
-        }
-        const decreaseButton = document.getElementById('decrease');
-        const increaseButton = document.getElementById('increase');
-        const quantityInput = document.getElementById('quantity');
-        decreaseButton.addEventListener('click', () => {
-            let currentQuantity = parseInt(quantityInput.value);
-            if (currentQuantity > 1) {
-                quantityInput.value = currentQuantity - 1;
-            }
-        });
-        increaseButton.addEventListener('click', () => {
-            let currentQuantity = parseInt(quantityInput.value);
-            quantityInput.value = currentQuantity + 1;
-        });
-    </script>
 
     <section class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
-        <div class="w-full mt-40">
+        <div class="text-center space-y-6">
+            <p class="text-sm uppercase tracking-wide">About Us</p>
+            <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Muwababy Origin Story</h1>
+            <p class="w-3/4 mx-auto text-sm text-justify lg:text-center">
+                Muwababy was born out of a desire to provide parents with more freedom and ease in their everyday lives. The founders, themselves parents, noticed the challenges that came with limited mobility and wanted to create solutions that addressed these issues. With this vision in mind, Muwababy was created to offer smart, practical, and stylish baby products that make parenting more enjoyable and less restrictive.
+            </p>
+        </div>
+    </section>
+
+    <section class="px-10 md:px-[6%] flex items-center justify-center min-h-screen">
+        <div class="w-full">
+            <div class="text-center space-y-4 md:space-y-6 mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-7xl font-bold">Why We're the Best Choice</h2>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-10 items-center mb-16 md:mb-20 lg:mb-40 w-[90%] md:w-[85%] mx-auto">
                 <div class="md:col-span-2 flex justify-center">
                     <div class="bg-[#EEE9E2] w-full h-[400px] sm:h-[350px] md:h-[400px] p-6 md:p-8 rounded-[30px] flex flex-col justify-center items-center text-center">
@@ -156,16 +90,6 @@ include 'header.php';
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="px-10 md:px-[6%] flex flex-col items-center justify-center mt-20 mb-20">
-        <div class="w-[80%] h-[80vh] bg-gray-200 rounded-[50px] overflow-hidden relative">
-            <img 
-                src="https://assets.nextchapter-ecommerce.com/Media/g8h9xbw9/97176-02913_header_web__(5).png" 
-                alt="Image Description" 
-                class="w-full h-full object-cover"
-            />
         </div>
     </section>
 
