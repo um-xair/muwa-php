@@ -25,7 +25,7 @@
         <nav class="flex-grow p-4">
             <ul class="mt-10">
                 <li class="mb-4">
-                    <a href="#" class="flex items-center block py-3 px-4 bg-[#614EF7] text-white rounded-[30px] mt-2">
+                    <a href="admin.php" class="flex items-center block py-3 px-4 bg-[#614EF7] text-white rounded-[30px] mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                             <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
                         </svg>
@@ -42,13 +42,13 @@
                     </a>
                     <ul id="user-submenu" class="hidden bg-gradient-to-br from-slate-100 via-slate-200 to-slate-100 mt-4 rounded-[15px] overflow-hidden p-2">
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">All user</a>
+                            <a href="manage-user.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">All user</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add User</a>
+                            <a href="add-user.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add User</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add Role</a>
+                            <a href="manage-role.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Manage Role</a>
                         </li>
                     </ul>
                 </li>
@@ -65,10 +65,10 @@
                             <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">All product</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add product</a>
+                            <a href="add-product.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add product</a>
                         </li>
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add category</a>
+                            <a href="manage-category.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Manage category</a>
                         </li>
                     </ul>
                 </li>

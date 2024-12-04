@@ -130,202 +130,117 @@
                 <button class="mr-4 bg-red-600 hover:bg-blue-500 text-white px-6 py-2 rounded-[15px]">Logout</button>
             </div>
         </div>
-        
-        <div class="p-6">
-            <h2 class="text-2xl text-black mb-4 font-bold">Welcome to the Dashboard, Xair!</h2>
-            <p class="text-gray-400 mb-6">Here you can manage your data, view reports, and more.</p>
-        </div>
-
-        <div class="mt-6">
-            <div class="relative flex flex-row gap-6">
-                <!-- line Chart -->
-                <div class="flex-1 bg-white rounded-[30px] text-gray-700 h-[55vh]">
-                    <div class="pt-6 px-2 pb-0">
-                        <div id="line-chart"></div>
+    
+        <div class="bg-white rounded-[30px] p-8 mt-8">
+            <h2 class="text-2xl font-bold mb-6">Add New Product</h2>
+            <form id="add-product-form" class="space-y-6">
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="product-img" class="block text-sm font-medium text-gray-700">Product Image</label>
+                        <label for="file-input" class="mt-2 w-full border-2 border-dashed border-gray-300 p-4 rounded-[20px] flex flex-col items-center justify-center mb-4 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#263D5F">
+                                <path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/>
+                            </svg>
+                            <span class="text-[#263D5F] text-sm">Upload New Image Here</span>
+                            <input type="file" id="file-input" class="hidden">
+                        </label>
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="additional-imgs" class="block text-sm font-medium text-gray-700">Additional Images</label>
+                        <label for="additional-imgs-input" class="mt-2 w-full border-2 border-dashed border-gray-300 p-4 rounded-[20px] flex flex-col items-center justify-center mb-4 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#263D5F">
+                                <path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/>
+                            </svg>
+                            <span class="text-[#263D5F] text-sm">Upload Multiple Images Here</span>
+                            <input type="file" id="additional-imgs-input" name="additional-imgs" class="hidden" multiple>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="product-name" class="block text-sm font-medium text-gray-700">Product Name</label>
+                        <input type="text" id="product-name" name="product-name" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="sku" class="block text-sm font-medium text-gray-700">SKU</label>
+                        <input type="text" id="sku" name="sku" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                </div>
+                
+    
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full px-2 mb-4">
+                        <label for="short-desc" class="block text-sm font-medium text-gray-700">Short Description</label>
+                        <textarea id="short-desc" name="short-desc" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                </div>
+    
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
+                        <select id="category" name="category" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                            <option value="stroller">Stroller</option>
+                            <option value="car-seat">Car Seat</option>
+                            <option value="diaper-bag">Diaper Bag</option>
+                            <option value="baby-clothes">Baby Clothes</option>
+                        </select>
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="stock" class="block text-sm font-medium text-gray-700">Stock</label>
+                        <select id="stock" name="stock" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                            <option value="in-stock">In Stock</option>
+                            <option value="out-of-stock">Out of Stock</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="original-price" class="block text-sm font-medium text-gray-700">Original Price</label>
+                        <input type="number" id="original-price" name="original-price" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="best-price" class="block text-sm font-medium text-gray-700">Best Price</label>
+                        <input type="number" id="best-price" name="best-price" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
                     </div>
                 </div>
 
-                <!-- Donut Chart -->
-                <div class="max-w-sm w-full bg-white rounded-[30px] h-[55vh]">
-                    <div class="overflow-hidden">
-                        <div class="py-3 px-5 mt-4 ml-4">Product Sold</div>
-                            <canvas class="p-6" id="chartDoughnut"></canvas>
-                      </div>
-                </div>
-
-                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                <script>
-                    const dataDoughnut = {
-                        labels: ["Horsi Stroller", "Muwa Bag", "Muwa Adapter"],
-                        datasets: [
-                        {
-                        label: "My First Dataset",
-                        data: [300, 50, 100],
-                        backgroundColor: [
-                            "#E05936",
-                            "#6AC67D",
-                            "#614EF5",
-                        ],
-                        hoverOffset: 2,
-                        borderWidth: 4,
-                        borderColor: '#fff',
-                        borderRadius: 10,
-                        },
-                    ],
-                    };
-              
-                    const configDoughnut = {
-                        type: "doughnut",
-                        data: dataDoughnut,
-                        options: {
-                            cutout: '70%'
-                        },
-                    };
-              
-                    var chartBar = new Chart(
-                        document.getElementById("chartDoughnut"),
-                        configDoughnut
-                    );
-                </script>
-            </div>
-
-            <!-- Bar Chart Container -->
-            <div class="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-6">
-                <div class="relative mx-4 mt-4 flex flex-col gap-4 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none md:flex-row md:items-center">
-                    <div>
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="variation-name" class="block text-sm font-medium text-gray-700">Variation Name</label>
+                        <input type="text" id="variation-name" name="variation-name" class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="w-full md:w-1/2 px-2 mb-4">
+                        <label for="variation-img" class="block text-sm font-medium text-gray-700">Variation Image</label>
+                        <label for="variation-img-input" class="mt-2 w-full border-2 border-dashed border-gray-300 p-4 rounded-[20px] flex flex-col items-center justify-center mb-4 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#263D5F" aria-hidden="true">
+                                <path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/>
+                            </svg>
+                            <span class="text-[#263D5F] text-sm">Upload Image Here</span>
+                            <input type="file" id="variation-img-input" name="variation-img" class="hidden">
+                        </label>
                     </div>
                 </div>
-                <div class="pt-6 px-2 pb-0">
-                    <div id="bar-chart"></div>
+    
+                <div>
+                    <button type="submit" class="w-1/4 items-center block py-3 px-4 bg-[#614EF7] text-white rounded-[30px] mt-2">Add New Product</button>
                 </div>
-            </div>
-
+            </form>
         </div>
+    </div>
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
         
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script>
-        // Line Chart
-        const labels = Array.from({ length: 30 }, (_, i) => `${i + 1}`);
-        const salesData = Array.from({ length: 30 }, () => Math.floor(Math.random() * 10000));
-        const lineChartConfig = {
-            series: [
-                {
-                    name: "Sales",
-                    data: salesData,
-                },
-            ],
-            chart: {
-                type: "line",
-                height: 240,
-                toolbar: { show: false },
-            },
-                title: { show: "" },
-                dataLabels: { enabled: false },
-                colors: ["#020617"],
-                stroke: {
-                lineCap: "round",
-                curve: "smooth",
-            },
-                markers: { size: 0 },
-                xaxis: {
-                    axisTicks: { show: false },
-                    axisBorder: { show: false },
-                labels: {
-                    style: {
-                        colors: "#616161",
-                        fontSize: "12px",
-                        fontFamily: "inherit",
-                        fontWeight: 400,
-                    },
-                },
-                categories: labels, // 30 days dynamically created
-            },
-                yaxis: {
-                labels: {
-                    style: {
-                        colors: "#616161",
-                        fontSize: "12px",
-                        fontFamily: "inherit",                            
-                        fontWeight: 400,
-                    },
-                },
-            },
-                grid: {
-                show: true,
-                borderColor: "#dddddd",
-                strokeDashArray: 5,
-                xaxis: { lines: { show: true } },
-                padding: { top: 5, right: 20 },
-            },
-                fill: { opacity: 0.8 },
-                tooltip: { theme: "dark" },
-            };
-            const lineChart = new ApexCharts(document.querySelector("#line-chart"), lineChartConfig);
-            lineChart.render();
-        
-
-
-
-        // Bar Chart Configuration
-        const barChartConfig = {
-            series: [
-                {
-                    name: "Sales",
-                    data: [500, 1200, 3000, 4500, 6000, 7500, 9000, 10000, 8500, 7000, 5500, 4000],
-                },
-            ],
-            chart: {
-                type: "bar",
-                height: 240,
-                toolbar: { show: false },
-            },
-                title: { show: "" },
-                dataLabels: { enabled: false },
-                colors: ["#020617"],
-                plotOptions: {
-                bar: {
-                    columnWidth: "40%",
-                    borderRadius: 2,
-                },
-            },
-            xaxis: {
-                axisTicks: { show: false },
-                axisBorder: { show: false },
-                labels: {
-                    style: {
-                        colors: "#616161",
-                        fontSize: "12px",
-                        fontFamily: "inherit",
-                        fontWeight: 400,
-                    },
-                },
-                categories: [
-                    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
-                ],
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        colors: "#616161",
-                        fontSize: "12px",
-                        fontFamily: "inherit",
-                        fontWeight: 400,
-                    },
-                },
-            },
-            grid: {
-                show: true,
-                borderColor: "#dddddd",
-                strokeDashArray: 5,
-                xaxis: { lines: { show: true } },
-                padding: { top: 5, right: 20 },
-            },
-                fill: { opacity: 0.8 },
-                tooltip: { theme: "dark" },
-          };
-        const barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartConfig);
-        barChart.render();
-        </script>
         
 
     
