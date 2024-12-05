@@ -27,9 +27,9 @@
                 </div>
                 <div class="relative mb-6">
                     <input id="password" type="password" placeholder="Password" class="border border-gray-300 p-2 rounded-[12px] w-full pr-10" required>
-                    <i id="toggle-password" class="fa fa-eye-slash absolute right-3 top-3 text-gray-600 cursor-pointer"></i>
+                    <i id="toggle-password" class="fa fa-eye absolute right-3 top-3 text-gray-600 cursor-pointer"></i>
                 </div>
-                <button type="submit" class="bg-[#614EF7] text-white font-semibold py-3 rounded-[30px] w-full">
+                <button type="submit" class="bg-[#614EF7] text-white font-semibold py-3 rounded-[30px] w-full transition-transform duration-300 transform hover:scale-105">
                     Login
                 </button>
             </form>
@@ -42,10 +42,12 @@
         const togglePassword = document.getElementById('toggle-password');
 
         togglePassword.addEventListener('click', () => {
-            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
+            const isPasswordHidden = passwordInput.getAttribute('type') === 'password';
+            
+            // Toggle the input type
+            passwordInput.setAttribute('type', isPasswordHidden ? 'text' : 'password');
 
-            // Toggle the icon
+            // Toggle the eye icon class
             togglePassword.classList.toggle('fa-eye');
             togglePassword.classList.toggle('fa-eye-slash');
         });
