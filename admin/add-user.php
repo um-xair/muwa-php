@@ -1,7 +1,6 @@
 <?php include 'sidebar.php'; ?>
     
     <div class="flex-1 md:ml-80 p-8">
-        <!-- Header Section -->
         <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
             <button id="menu-btn" class="md:hidden ml-4">
                 <i class="fas fa-bars text-2xl"></i>
@@ -13,8 +12,7 @@
                 <button class="mr-4 bg-red-600 hover:bg-blue-500 text-white px-6 py-2 rounded-[15px]">Logout</button>
             </div>
         </div>
-    
-        <!-- Add User Form -->
+
         <div class="bg-white rounded-[30px] p-8 mt-8">
             <h2 class="text-2xl font-bold mb-6">Add New User</h2>
             <form id="add-user-form" class="space-y-6">

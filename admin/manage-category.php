@@ -1,6 +1,6 @@
 <?php include 'sidebar.php'; ?>
 
-<div class="flex-1 md:ml-80 p-8">
+    <div class="flex-1 md:ml-80 p-8">
         <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
             <button id="menu-btn" class="md:hidden ml-4">
                 <i class="fas fa-bars text-2xl"></i>
@@ -18,7 +18,6 @@
                 Add Category
             </button>
         </div>
-
     
         <div id="category-modal" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
             <div class="bg-white rounded-[30px] p-8 w-1/3 relative">
@@ -77,7 +76,6 @@
         </div>
     </div>
     
-    <!-- JavaScript to handle modal interactions -->
     <script>
         const addcategoryBtn = document.getElementById("add-category-btn");
         const categoryModal = document.getElementById("category-modal");

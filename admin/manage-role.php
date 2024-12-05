@@ -1,6 +1,6 @@
 <?php include 'sidebar.php'; ?>
 
-<div class="flex-1 md:ml-80 p-8">
+    <div class="flex-1 md:ml-80 p-8">
         <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
             <button id="menu-btn" class="md:hidden ml-4">
                 <i class="fas fa-bars text-2xl"></i>
@@ -19,7 +19,6 @@
             </button>
         </div>
 
-    
         <div id="role-modal" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
             <div class="bg-white rounded-[30px] p-8 w-1/3 relative">
                 <h2 class="text-xl font-bold mb-4">Add New Role</h2>
@@ -77,7 +76,6 @@
         </div>
     </div>
     
-    <!-- JavaScript to handle modal interactions -->
     <script>
         const addRoleBtn = document.getElementById("add-role-btn");
         const roleModal = document.getElementById("role-modal");
