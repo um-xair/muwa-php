@@ -62,7 +62,7 @@
                     </a>
                     <ul id="product-submenu" class="hidden bg-gradient-to-br from-slate-100 via-slate-200 to-slate-100 mt-4 rounded-[15px] overflow-hidden p-2">
                         <li class="mb-2">
-                            <a href="#" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">All product</a>
+                            <a href="manage-product.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">All product</a>
                         </li>
                         <li class="mb-2">
                             <a href="add-product.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add product</a>

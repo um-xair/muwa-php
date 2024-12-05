@@ -144,7 +144,6 @@
                         <th class="py-3 px-6 text-left">Stock</th>
                         <th class="py-3 px-6 text-left">Price</th>
                         <th class="py-3 px-6 text-left">Category</th>
-                        <th class="py-3 px-6 text-left">Date Updated</th>
                         <th class="py-3 px-6 text-left">Action</th>
                     </tr>
                 </thead>
@@ -158,11 +157,10 @@
                         <td class="py-3 px-6">12345</td>
                         <td class="py-3 px-6">100</td>
                         <td class="py-3 px-6">
-                            <div class="text-sm text-gray-500 line-through">$50.00</div> <!-- Original Price with line-through -->
-                            <div class="text-">$45.00</div> <!-- Best Price below it -->
+                            <div class="text-sm text-gray-500 line-through">RM50.00</div>
+                            <div class="text-">RM45.00</div>
                         </td>
                         <td class="py-3 px-6">Category Name</td>
-                        <td class="py-3 px-6">2024-12-04</td>
                         <td class="py-3 px-6">
                             <button class="bg-blue-600 text-white px-4 py-2 rounded-[7px] mr-2 edit-product-btn" data-product-id="1">Edit</button>
                             <button class="bg-green-600 text-white px-4 py-2 rounded-[7px] mr-2 view-product-btn" data-product-id="1">View</button>
@@ -173,15 +171,14 @@
             </table>
         </div>
     
-        <!-- Edit Product Form Modal -->
         <div id="edit-product-modal" class="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center hidden">
-            <div class="bg-white p-8 rounded-[30px] w-[80%] h-[80%] max-h-[90vh] overflow-y-auto">
+            <div class="bg-white p-8 rounded-[30px] w-[80%] h-[80%] max-h-[90vh] overflow-y-auto relative">
+                <button type="button" id="close-edit-product-modal" class="absolute top-4 right-4 bg-red-600 text-white rounded-full px-2">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
                 <h2 class="text-xl font-semibold mb-4">Edit Product</h2>
                 <form id="add-product-form" action="add-product.php" method="POST" enctype="multipart/form-data" class="space-y-6">
-                
-                    <!-- Product Image Upload and Additional Image Upload in Two Columns -->
                     <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Product Image Upload -->
                         <div class="w-full px-2 mb-4">
                             <label for="product-img" class="block text-sm font-medium text-gray-700">Product Image</label>
                             <label for="file-input" class="mt-2 w-full border-2 border-dashed border-gray-300 p-4 rounded-[20px] flex flex-col items-center justify-center mb-4 cursor-pointer">
@@ -192,8 +189,7 @@
                                 <input type="file" id="file-input" name="product-img" class="hidden" required>
                             </label>
                         </div>
-                    
-                        <!-- Additional Image Upload -->
+
                         <div class="w-full px-2 mb-4">
                             <label for="additional-imgs" class="block text-sm font-medium text-gray-700">Additional Images</label>
                             <label for="additional-imgs-input" class="mt-2 w-full border-2 border-dashed border-gray-300 p-4 rounded-[20px] flex flex-col items-center justify-center mb-4 cursor-pointer">
@@ -206,8 +202,6 @@
                         </div>
                     </div>
                     
-            
-                    <!-- Product Details -->
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full md:w-1/2 px-2 mb-4">
                             <label for="product-name" class="block text-sm font-medium text-gray-700">Product Name</label>
@@ -219,15 +213,13 @@
                         </div>
                     </div>
             
-                    <!-- Short Description -->
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full px-2 mb-4">
                             <label for="short-desc" class="block text-sm font-medium text-gray-700">Short Description</label>
                             <textarea id="short-desc" name="short-desc" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500"></textarea>
                         </div>
                     </div>
-            
-                    <!-- Category and Stock -->
+
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full md:w-1/2 px-2 mb-4">
                             <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
@@ -247,7 +239,6 @@
                         </div>
                     </div>
             
-                    <!-- Price Details -->
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full md:w-1/2 px-2 mb-4">
                             <label for="original-price" class="block text-sm font-medium text-gray-700">Original Price</label>
@@ -258,8 +249,7 @@
                             <input type="number" id="best-price" name="best-price" required class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
                         </div>
                     </div>
-            
-                    <!-- Variation Image Upload -->
+
                     <div class="flex flex-wrap -mx-2">
                         <div class="w-full md:w-1/2 px-2 mb-4">
                             <label for="variation-name" class="block text-sm font-medium text-gray-700">Variation Name</label>
@@ -270,28 +260,134 @@
                             <input type="file" id="variation-img" name="variation-img" class="mt-1 block w-full p-3 border border-gray-300 rounded-[10px] focus:ring-blue-500 focus:border-blue-500">
                         </div>
                     </div>
-            
-                    <!-- Button to Save Product -->
+
                     <div class="mt-6 text-right">
                         <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-[10px] hover:bg-blue-600">Save Product</button>
                     </div>
                 </form>
             </div>
         </div>
-        
-    
-        <!-- View Product Modal -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('edit-product-modal');
+            const closeModalButton = document.getElementById('close-edit-product-modal');
+            closeModalButton.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+        });
+        </script>
+
         <div id="view-product-modal" class="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center hidden">
-            <div class="bg-white p-8 rounded-[30px] w-96">
+            <div class="relative bg-white p-8 rounded-[30px] w-[50%] h-[80%] max-h-[60vh] overflow-y-auto">
                 <h2 class="text-xl font-semibold mb-4">Product Details</h2>
-                <div id="view-product-details">
-                    <!-- Product details will be dynamically populated here -->
+                <div id="view-product-details"></div>
+                <button 
+                    type="button" 
+                    id="close-view-modal" 
+                    class="absolute top-4 right-4 bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center"
+                    aria-label="Close Modal">
+                    <i class="fas fa-times text-sm"></i>
+                </button>
+            </div>
+        </div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const viewProductModal = document.getElementById('view-product-modal');
+    const closeViewModalButton = document.getElementById('close-view-modal');
+    const productDetailsContainer = document.getElementById('view-product-details');
+
+    // Mock product data (replace this with your actual API or data source)
+    const products = {
+        1: {
+            img: 'https://via.placeholder.com/150',
+            name: 'Baby Stroller',
+            shortDesc: 'A comfortable and lightweight baby stroller.',
+            category: 'Stroller',
+            stock: 'In Stock',
+            sku: 'ST-12345',
+            originalPrice: '$300',
+            bestPrice: '$250',
+            variationName: 'Color: Red',
+            variationImg: 'https://via.placeholder.com/100',
+        },
+    };
+
+    // Function to populate modal with product details
+    const populateProductDetails = (product) => {
+    productDetailsContainer.innerHTML = `
+        <div class="flex flex-col sm:flex-row gap-4">
+            <!-- Left Column: Main Product Details -->
+            <div class="flex-1">
+                <div class="mb-4">
+                    <img src="${product.img}" alt="${product.name}" class="w-50 h-auto rounded-[10px]">
                 </div>
-                <div class="flex justify-end">
-                    <button id="close-view-modal" class="bg-gray-500 text-white px-6 py-2 rounded-[10px]">Close</button>
+                <div class="mb-2">
+                    <h3 class="text-lg font-semibold">${product.name}</h3>
+                    <p class="text-sm text-gray-600">${product.shortDesc}</p>
+                </div>
+                <div class="mb-2">
+                    <p><strong>Category:</strong> ${product.category}</p>
+                    <p><strong>Stock:</strong> ${product.stock}</p>
+                </div>
+                <div class="mb-2">
+                    <p><strong>SKU:</strong> ${product.sku}</p>
+                </div>
+                <div class="mb-2">
+                    <p><strong>Original Price:</strong> ${product.originalPrice}</p>
+                    <p><strong>Best Price:</strong> ${product.bestPrice}</p>
+                </div>
+            </div>
+            <!-- Right Column: Variation Details -->
+            <div class="flex-1">
+                <div class="border p-4 rounded-[10px] bg-gray-50">
+                    <h4 class="text-md font-semibold mb-2">Variation Details</h4>
+                    <p><strong>Variation:</strong> <br>${product.variationName}</p>
+                    <div class="mt-2">
+                        <img src="${product.variationImg}" alt="${product.variationName}" class="w-32 h-32 rounded-[10px]">
+                    </div>
                 </div>
             </div>
         </div>
+    `;
+};
+
+
+    // Function to open the modal
+    const openViewProductModal = (product) => {
+        populateProductDetails(product);
+        viewProductModal.classList.remove('hidden');
+    };
+
+    // Event listener for the close button
+    closeViewModalButton.addEventListener('click', () => {
+        viewProductModal.classList.add('hidden');
+    });
+
+    // Attach event listeners to all "View" buttons
+    document.querySelectorAll('.view-product-btn').forEach((button) => {
+        button.addEventListener('click', (event) => {
+            const productId = event.currentTarget.getAttribute('data-product-id');
+            const product = products[productId]; // Replace with API call if necessary
+            if (product) {
+                openViewProductModal(product);
+            } else {
+                console.error('Product not found.');
+            }
+        });
+    });
+});
+
+</script>
+
     
         <!-- Delete Confirmation Modal -->
         <div id="delete-product-modal" class="fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center hidden">

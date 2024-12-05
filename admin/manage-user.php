@@ -1,7 +1,6 @@
 <?php include 'sidebar.php'; ?>
 
-<div class="flex-1 md:ml-80 p-8">
-        <!-- Header Section -->
+    <div class="flex-1 md:ml-80 p-8">
         <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
             <button id="menu-btn" class="md:hidden ml-4">
                 <i class="fas fa-bars text-2xl"></i>
@@ -19,8 +18,7 @@
                 Add New User
             </button>
         </div>
-    
-        <!-- User Information Table -->
+
         <div class="bg-white rounded-[30px] p-8 mt-8">
             <table class="min-w-full table-auto">
                 <thead>
