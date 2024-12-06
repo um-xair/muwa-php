@@ -1,18 +1,5 @@
 <?php include 'sidebar.php'; ?>
 
-    <div class="flex-1 md:ml-80 p-8">
-        <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
-            <button id="menu-btn" class="md:hidden ml-4">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-            <div class="flex items-center space-x-2 ml-4">
-                <h1 class="text-sm font-bold lg:text-xl">Muwababy Dashboard</h1>
-            </div>
-            <div>
-                <button class="mr-4 bg-red-600 hover:bg-blue-500 text-white px-6 py-2 rounded-[15px]">Logout</button>
-            </div>
-        </div>
-    
         <div class="mt-8">
             <button id="add-role-btn" class="bg-[#614EF7] w-60 text-white px-6 py-3 rounded-[20px]" onclick="window.location.href='#'">
                 Add Role

@@ -81,6 +81,23 @@
                     </a>
                 </li>
                 <li class="mb-4">
+                    <a href="#" id="store-menu-toggle" class="flex items-center block py-3 px-4 hover:bg-[#614EF7] hover:text-white rounded-[30px] group">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="fill-black group-hover:fill-white">
+                            <path d="M841-518v318q0 33-23.5 56.5T761-120H201q-33 0-56.5-23.5T121-200v-318q-23-21-35.5-54t-.5-72l42-136q8-26 28.5-43t47.5-17h556q27 0 47 16.5t29 43.5l42 136q12 39-.5 71T841-518Zm-272-42q27 0 41-18.5t11-41.5l-22-140h-78v148q0 21 14 36.5t34 15.5Zm-180 0q23 0 37.5-15.5T441-612v-148h-78l-22 140q-4 24 10.5 42t37.5 18Zm-178 0q18 0 31.5-13t16.5-33l22-154h-78l-40 134q-6 20 6.5 43t41.5 23Zm540 0q29 0 42-23t6-43l-42-134h-76l22 154q3 20 16.5 33t31.5 13ZM201-200h560v-282q-5 2-6.5 2H751q-27 0-47.5-9T663-518q-18 18-41 28t-49 10q-27 0-50.5-10T481-518q-17 18-39.5 28T393-480q-29 0-52.5-10T299-518q-21 21-41.5 29.5T211-480h-4.5q-2.5 0-5.5-2v282Zm560 0H201h560Z"/>
+                        </svg>
+                        <span class="ml-4">Store Management</span>
+                        <i class="fas fa-chevron-down ml-auto"></i>
+                    </a>
+                    <ul id="store-submenu" class="hidden bg-gradient-to-br from-slate-100 via-slate-200 to-slate-100 mt-4 rounded-[15px] overflow-hidden p-2">
+                        <li class="mb-2">
+                            <a href="manage-store.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Manage Store</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="add-store.php" class="block py-2 px-4 hover:bg-[#614EF7] hover:text-white rounded-[7px]">Add New Store</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-4">
                     <a href="#" class="flex items-center block py-3 px-4 hover:bg-[#614EF7] hover:text-white rounded-[30px] group">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="fill-black group-hover:fill-white">
                             <path d="M120-120v-80l80-80v160h-80Zm160 0v-240l80-80v320h-80Zm160 0v-320l80 81v239h-80Zm160 0v-239l80-80v319h-80Zm160 0v-400l80-80v480h-80ZM120-327v-113l280-280 160 160 280-280v113L560-447 400-607 120-327Z"/>
@@ -91,6 +108,19 @@
             </ul>
         </nav>
     </div>
+
+    <div class="flex-1 md:ml-80 p-8">
+        <div class="bg-[#FFFFFF] text-black p-4 flex justify-between items-center rounded-[30px]">
+            <button id="menu-btn" class="md:hidden ml-4">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div class="flex items-center space-x-2 ml-4">
+                <h1 class="text-sm font-bold lg:text-xl">Muwababy Dashboard</h1>
+            </div>
+            <div>
+                <button class="mr-4 bg-red-600 hover:bg-blue-500 text-white px-6 py-2 rounded-[15px]">Logout</button>
+            </div>
+        </div>
     
 
 
@@ -99,19 +129,28 @@
         document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('user-menu-toggle').addEventListener('click', function () {
         document.getElementById('user-submenu').classList.toggle('hidden');
-    });
+        });
 
         document.getElementById('product-menu-toggle').addEventListener('click', function () {
         document.getElementById('product-submenu').classList.toggle('hidden');
-    });
+        });
 
-        document.getElementById('sidebar-toggle').addEventListener('click', function () {
+        document.getElementById('store-menu-toggle').addEventListener('click', function () {
+        document.getElementById('store-submenu').classList.toggle('hidden');
+        });
+
+        document.getElementById('menu-btn').addEventListener('click', function () {
         const sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('-translate-x-full');
-    });
-    });
+        });
 
+        document.getElementById('close-btn').addEventListener('click', function () {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.add('-translate-x-full');
+        });
+    });
     </script>
+
 
 </body>
 </html>
