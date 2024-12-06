@@ -30,9 +30,9 @@
                         <td class="py-3 px-6">Selangor</td>
                         <td class="py-3 px-6">Petaling</td>
                         <td class="py-3 px-6">
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded-[7px] mr-2 edit-btn">Edit</button>
-                            <button class="bg-green-600 text-white px-4 py-2 rounded-[7px] mr-2 view-btn">View</button>
-                            <button class="bg-red-600 text-white px-4 py-2 rounded-[7px] mr-2 delete-btn">Delete</button>
+                            <button class="bg-blue-600 text-white px-4 py-3 rounded-[15px] mr-2 edit-btn">Edit</button>
+                            <button class="bg-green-600 text-white px-4 py-3 rounded-[15px] mr-2 view-btn">View</button>
+                            <button class="bg-red-600 text-white px-4 py-3 rounded-[15px] mr-2 delete-btn">Delete</button>
                         </td>
                     </tr>
                 </tbody>

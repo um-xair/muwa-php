@@ -43,7 +43,7 @@
                             <span class="bg-yellow-300 text-black px-4 py-2 rounded-full text-sm">Pending</span>
                         </td>
                         <td class="py-3 px-6">
-                            <button class="bg-green-600 text-white px-4 py-2 rounded-[7px] mr-2 update-status-btn">Update</button>
+                            <button class="bg-green-600 text-white px-4 py-3 rounded-[15px] mr-2 update-status-btn">Update</button>
                         </td>
                     </tr>
                 </tbody>
@@ -109,7 +109,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="flex justify-end gap-4 mt-6">
+                <div class="flex justify-between gap-4 mt-6">
                     <button type="button" id="modal-close-btn" class="absolute top-4 right-4 bg-red-600 text-white rounded-full px-2">
                         <i class="fas fa-times text-xl"></i>
                     </button>

@@ -35,9 +35,9 @@
                         </td>
                         <td class="py-3 px-6">Category Name</td>
                         <td class="py-3 px-6">
-                            <button class="bg-blue-600 text-white px-4 py-2 rounded-[7px] mr-2 edit-product-btn" data-product-id="1">Edit</button>
-                            <button class="bg-green-600 text-white px-4 py-2 rounded-[7px] mr-2 view-product-btn" data-product-id="1">View</button>
-                            <button class="bg-red-600 text-white px-4 py-2 rounded-[7px] delete-product-btn" data-product-id="1">Delete</button>
+                            <button class="bg-blue-600 text-white px-4 py-3 rounded-[15px] mr-2 edit-product-btn" data-product-id="1">Edit</button>
+                            <button class="bg-green-600 text-white px-4 py-3 rounded-[15px] mr-2 view-product-btn" data-product-id="1">View</button>
+                            <button class="bg-red-600 text-white px-4 py-3 rounded-[15px] delete-product-btn" data-product-id="1">Delete</button>
                         </td>
                     </tr>
                 </tbody>

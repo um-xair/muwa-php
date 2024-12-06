@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="w-full px-2">
-                    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-[10px] w-full">Add Product</button>
+                    <button type="submit" class="w-1/4 items-center block py-3 px-4 bg-[#614EF7] text-white rounded-[30px] mt-2">Add Product</button>
                 </div>
             </form>
         </div>
