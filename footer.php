@@ -21,7 +21,7 @@
                     <h4 class="font-bold text-lg text-black mb-2">MUWA INTERNATIONAL SDN. BHD.</h4>
                     <ul class="space-y-1 text-black text-md">
                         <li><a href="#" class="font-bold text-lg text-black">1545551X / 202301051637</a></li>
-                        <li><a href="index.php" class="text-gray-800">About</a></li>
+                        <li><a href="about.php" class="text-gray-800">About</a></li>
                         <li><a href="#" class="text-gray-800">Blog</a></li>
                         <li><a href="find-us.php" class="text-gray-800">Find Us</a></li>
                     </ul>
