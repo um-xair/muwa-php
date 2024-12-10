@@ -33,9 +33,9 @@ include 'header.php';
                         <span class="text-gray-500 line-through text-sm">RM1399</span>
                         <span class="text-3xl font-bold ml-2">RM799</span>
                     </div>
-                    <button class="mt-4 bg-[#844D3E] text-white py-3 px-6 rounded-full text-lg w-3/4">
+                    <a href="product.php" class="mt-4 bg-[#844D3E] text-center text-white py-3 px-6 rounded-full text-lg w-3/4">
                         Buy Now
-                    </button>
+                    </a>
                 </div>
             </div>
     
@@ -48,9 +48,9 @@ include 'header.php';
                         <span class="text-gray-500 line-through text-sm">RM1399</span>
                         <span class="text-3xl font-bold ml-2">RM799</span>
                     </div>
-                    <button class="mt-4 bg-[#844D3E] text-white py-3 px-6 rounded-full text-lg w-3/4">
+                    <a href="product.php" class="mt-4 bg-[#844D3E] text-center text-white py-3 px-6 rounded-full text-lg w-3/4">
                         Buy Now
-                    </button>
+                    </a>
                 </div>
             </div>
     
@@ -63,9 +63,9 @@ include 'header.php';
                         <span class="text-gray-500 line-through text-sm">RM1399</span>
                         <span class="text-3xl font-bold ml-2">RM799</span>
                     </div>
-                    <button class="mt-4 bg-[#844D3E] text-white py-3 px-6 rounded-full text-lg w-3/4">
+                    <a href="product.php" class="mt-4 bg-[#844D3E] text-center text-white py-3 px-6 rounded-full text-lg w-3/4">
                         Buy Now
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
