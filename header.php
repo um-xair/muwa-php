@@ -29,6 +29,7 @@
             <nav class="space-x-6 lg:space-x-10 text-base lg:text-lg flex items-center">
                 <a href="index.php" class="">Home</a>
                 <a href="about.php" class="">About Us</a>
+                <a href="buy-now.php" class="">Buy Now</a>
                 <a href="#" id="stroller-menu" class="flex items-center space-x-2 cursor-pointer">
                     <span>Stroller</span>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
