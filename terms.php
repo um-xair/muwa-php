@@ -27,7 +27,7 @@ include 'header.php';
             <p class="w-full mx-auto text-sm md:text-base text-justify">
                 Welcome to <span class="font-semibold">Muwababy!</span> By accessing and using our website
                 <a href="https://www.muwababy.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    www.Muwababy.com
+                    www.muwababy.com
                 </a>, you agree to comply with and be bound by these Terms and Conditions.
                 If you do not agree with these terms, please refrain from using our services.
             </p>

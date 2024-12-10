@@ -27,7 +27,7 @@ include 'header.php';
             <p class="text-sm uppercase tracking-wide">Get In Touch</p>
             <h1 class="text-4xl lg:text-8xl md:text-6xl font-bold">Muwa Support</h1>
             <p class="w-full mx-auto text-sm text-justify lg:text-center">
-                If you have any questions about Muwababy 202301051637 (1545551-X) strollers or accessories, please find your answers in this section. If you have any questions, please do not hesitate to reach out to us.
+                If you have any questions about MUWA INTERNATIONAL SDN. BHD 1545551X / 202301051637 strollers or accessories, please find your answers in this section. If you have any questions, please do not hesitate to reach out to us.
             </p>
         </div>
     </section>
