@@ -42,9 +42,9 @@ include 'header.php';
                     <span class="text-3xl sm:text-4xl font-bold">RM799</span>
                 </div>
                 <div class="flex space-x-4 sm:space-x-6 mb-6">
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#CFCED4] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-white-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#5A5862] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-black-sq.png')"></div>
-                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#967970] rounded-full cursor-pointer" onclick="changeImage('assets/muwa-brown-sq.png')"></div>
+                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#CFCED4] rounded-full cursor-pointer" onclick="changeImage('assets/Silver.jpg')"></div>
+                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#5A5862] rounded-full cursor-pointer" onclick="changeImage('assets/Black.jpg')"></div>
+                    <div class="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] bg-[#967970] rounded-full cursor-pointer" onclick="changeImage('assets/Brown.jpg')"></div>
                 </div>
                 <div class="flex items-center space-x-4 mt-6 sm:mt-10">
                     <div class="flex items-center border-2 rounded-[20px] border-[#844D3E]">

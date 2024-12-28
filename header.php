@@ -74,19 +74,19 @@
                 <div class="flex flex-col space-y-2">
                     <div class="flex items-center space-x-4">
                         <div class="w-10 h-10">
-                            <img src="assets/muwa-black-sq.png" alt="Stroller Accessories" class="w-full h-full object-cover">
+                            <img src="assets/Black.jpg" alt="Stroller Accessories" class="w-full h-full object-cover">
                         </div>
                         <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
                     <div class="hidden flex items-center space-x-4">
                         <div class="w-10 h-10">
-                            <img src="assets/muwa-brown-sq.png" alt="Stroller Parts" class="w-full h-full object-cover">
+                            <img src="assets/Brown.jpg" alt="Stroller Parts" class="w-full h-full object-cover">
                         </div>
                         <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
                     <div class="hidden flex items-center space-x-4">
                         <div class="w-10 h-10">
-                            <img src="assets/muwa-white-sq.png" alt="Stroller Guide" class="w-full h-full object-cover">
+                            <img src="assets/Silver.jpg" alt="Stroller Guide" class="w-full h-full object-cover">
                         </div>
                         <a href="product.php" class="text-[#844D3E]">Muwa Horsi Stroller</a>
                     </div>
@@ -263,7 +263,7 @@
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
             <a href="product.php" class="bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
-                    <img src="assets/muwa-black-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
+                    <img src="assets/Black.jpg" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <h4 class="font-medium text-lg">Muwa Horsi</h4>
@@ -272,7 +272,7 @@
             </a>
             <a href="product.php" class="hidden bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
-                    <img src="assets/muwa-brown-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
+                    <img src="assets/Brown.jpg" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <h4 class="font-medium text-lg">Muwa Horsi</h4>
@@ -281,7 +281,7 @@
             </a>
             <a href="product.php" class="hidden bg-white p-6 rounded-[20px] flex items-center space-x-4 hover:shadow-lg transition-shadow duration-300">
                 <div class="w-32 h-32">
-                    <img src="assets/muwa-white-sq.png" alt="Privacy Policy" class="w-full h-full object-cover">
+                    <img src="assets/Silver.jpg" alt="Privacy Policy" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <h4 class="font-medium text-lg">Muwa Horsi</h4>

@@ -63,7 +63,7 @@ include 'header.php';
             <div class="swiper mb-20">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex-shrink-0 w-full md:w-1/3 bg-white overflow-hidden">
-                        <img src="assets/muwa-white.png" alt="Stroller" class="w-full h-auto object-cover">
+                        <img src="assets/Silver.jpg" alt="Stroller" class="w-full h-auto object-cover">
                         <div class="p-4">
                             <p class="text-lg font-medium text-black font-bold">Muwababy Horsi Stroller (White)</p>
                             <div class="flex justify-between items-center mt-2">
@@ -73,7 +73,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="swiper-slide flex-shrink-0 w-full md:w-1/3 bg-white overflow-hidden">
-                        <img src="assets/muwa-brown.png" alt="Stroller" class="w-full h-full object-cover">
+                        <img src="assets/Brown.jpg" alt="Stroller" class="w-full h-full object-cover">
                         <div class="p-4">
                             <p class="text-lg font-medium text-black font-bold">Muwababy Horsi Stroller (Brown)</p>
                             <div class="flex justify-between items-center mt-2">
@@ -83,7 +83,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="swiper-slide flex-shrink-0 w-full md:w-1/3 bg-white overflow-hidden">
-                        <img src="assets/muwa-black.png" alt="Stroller" class="w-full h-full object-cover">
+                        <img src="assets/Black.jpg" alt="Stroller" class="w-full h-full object-cover">
                         <div class="p-4">
                             <p class="text-lg font-medium text-black font-bold">Muwababy Horsi Stroller (Black)</p>
                             <div class="flex justify-between items-center mt-2">
@@ -93,7 +93,7 @@ include 'header.php';
                         </div>
                     </div>
                     <div class="swiper-slide flex-shrink-0 w-full md:w-1/3 bg-white overflow-hidden">
-                        <img src="assets/muwa-brown.png" alt="Stroller" class="w-full h-full object-cover">
+                        <img src="assets/Silver.jpg" alt="Stroller" class="w-full h-full object-cover">
                         <div class="p-4">
                             <p class="text-lg font-medium text-black font-bold">Muwababy Horsi Stroller (Brown)</p>
                             <div class="flex justify-between items-center mt-2">

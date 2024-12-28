@@ -26,7 +26,7 @@ include 'header.php';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
             <!-- Product 1 -->
             <div class="flex flex-col items-center p-6">
-                <img src="assets/muwa-black-sq.png" alt="Product 1" class="w-full h-auto object-cover rounded-md mb-4">
+                <img src="assets/Black.jpg" alt="Product 1" class="w-full h-auto object-cover rounded-md mb-4">
                 <div class="w-full flex flex-col items-start">
                     <h2 class="text-xl font-bold mb-2">Muwababy Horsi Stroller</h2>
                     <div class="text-left">
@@ -41,7 +41,7 @@ include 'header.php';
     
             <!-- Product 2 -->
             <div class="flex flex-col items-center p-6">
-                <img src="assets/muwa-brown-sq.png" alt="Product 2" class="w-full h-auto object-cover rounded-md mb-4">
+                <img src="assets/Brown.jpg" alt="Product 2" class="w-full h-auto object-cover rounded-md mb-4">
                 <div class="w-full flex flex-col items-start">
                     <h2 class="text-xl font-bold mb-2">Muwababy Horsi Stroller</h2>
                     <div class="text-left">
@@ -56,7 +56,7 @@ include 'header.php';
     
             <!-- Product 3 -->
             <div class="flex flex-col items-center p-6">
-                <img src="assets/muwa-white-sq.png" alt="Product 3" class="w-full h-auto object-cover rounded-md mb-4">
+                <img src="assets/Silver.jpg" alt="Product 3" class="w-full h-auto object-cover rounded-md mb-4">
                 <div class="w-full flex flex-col items-start">
                     <h2 class="text-xl font-bold mb-2">Muwababy Horsi Stroller</h2>
                     <div class="text-left">
